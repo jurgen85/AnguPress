@@ -1,5 +1,5 @@
-app.controller('MainCtrl', ['$scope', 'posts', function($scope, posts) {
-	posts.success(function(data) {
+app.controller('MainCtrl', ['$scope', 'post', function($scope, post) {
+	post.query(function(data) {
     	$scope.posts = data;
   	});
 }]);

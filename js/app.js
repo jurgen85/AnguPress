@@ -1,4 +1,4 @@
-var app = angular.module('AnguPress', ['ngSanitize', 'ngRoute']);
+var app = angular.module('AnguPress', ['ngSanitize', 'ngRoute', 'ngResource']);
 
 app.config(function($routeProvider) {
 	$routeProvider
