@@ -1,21 +1,32 @@
 <!doctype html>
 <html>
   <head>
+  
     <title>AnguPress</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="AnguPress, AngularJS web application with WordPress as a backend.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  
   </head>
+  
   <body ng-app="AnguPress" ng-controller="MainCtrl">
     
     <div ng-view></div>
 	
-	  <!-- jQuery -->
-	  <script src="js/libs/jquery-1.11.3.min.js"></script>
+	<!-- Load respond.js -->
+    <script src="js/libs/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	
+	<!-- jQuery -->
+	<script src="js/libs/jquery-1.11.3.min.js"></script>
     
-	  <!-- Bootstrap -->
-	  <script src="js/libs/bootstrap.min.js"></script>
+	<!-- Bootstrap -->
+    <script src="js/libs/bootstrap.min.js"></script>
     
-	  <!-- AngularJS -->
-	  <script src="js/libs/angular.min.js"></script>
+	<!-- AngularJS -->
+	<script src="js/libs/angular.min.js"></script>
 	
     <!-- AngularJS Sanitize library -->
     <script src="js/libs/angular-sanitize.min.js"></script>
@@ -31,7 +42,7 @@
       
     <!-- Include angular controllers -->
     <script src="js/controllers/MainController.js"></script>
-      <script src="js/controllers/PostController.js"></script>
+    <script src="js/controllers/PostController.js"></script>
       
     <!-- Include angular directives -->
         
