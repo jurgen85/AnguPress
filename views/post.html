@@ -3,6 +3,7 @@
     <h1>{{ post.title }}</h1>
     <span class="date">{{ post.date | date }}</span> | <span class="author">{{ post.author.name }}</span>
     <p ng-bind-html="post.content"></p>
+    <button class="btn" ng-click="post.deletePost">delete</button>
   </div>
   
 </div>
