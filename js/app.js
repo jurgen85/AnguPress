@@ -11,12 +11,16 @@ app.run( ['$rootScope', function($rootScope) {
 app.config(function($routeProvider) {
 	$routeProvider
 		.when('/', {
-			controller: 'MainCtrl',
+			controller: 'HomeCtrl',
 			templateUrl: 'views/home.html'
 		})
 		.when('/posts/:id', {
 			controller: 'PostCtrl',
 			templateUrl: 'views/post.html'
+		})
+		.when('/posts/:id', {
+			controller: 'PostCtrl',
+			templateUrl: 'views/posts.html'
 		})
 		.otherwise({
 			redirectTo: '/'
