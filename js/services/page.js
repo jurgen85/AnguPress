@@ -1,3 +1,3 @@
 app.factory('page', ['$resource', function($resource) {
-  return $resource($scope.apiUrl + '/page/:id');
+  return $resource('http://localhost/user-feedback-rest-api/wp-json/pages/:id');
 }]);
